@@ -14,15 +14,10 @@ export const counterSlice = createSlice({
       change_name: (state, action) => {
         state.name = "Tharindu Akalanka";
       },
-      get_user: (state, action) =>{
-        const {lastName} = action.payload;
-        //state.msg = action.payload.lastName;
-       console.log(lastName);
-      },
+      get_user: () =>{},
       set_user: (state, action) =>{
         const {lastName} = action.payload;
         state.msg = lastName;
-        console.log(lastName);
       }
     },
 
