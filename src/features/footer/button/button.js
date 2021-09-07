@@ -11,7 +11,7 @@ export function Button(){
     return(
         <div>
             <button onClick={() => dispatch(change_name())}>Click to change name</button>
-            <button onClick={() => dispatch(get_user({lastName: ''}))}>Click to get data</button>
+            <button onClick={() => dispatch(get_user())}>Click to get data</button>
         </div>
     );
 }
